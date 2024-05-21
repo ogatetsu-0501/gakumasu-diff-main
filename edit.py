@@ -36,7 +36,8 @@ def update_list_with_produce_skill(support_card_list):
             updated_card = {
                 'supportCardOrder': card['order'],
                 'name': card['name'],
-                'rarity': card['rarity'],
+                'rarity': card['rarity'].replace('SupportCardRarity_', ''),
+                'type': card['type'].replace('SupportCardProduceSkillLevel', ''),
                 'produceSkillOrder': group['order'],
                 'supportCardLevel': group['supportCardLevel'],
                 'produceSkillId': group['produceSkillId'],
@@ -59,7 +60,7 @@ def add_description_texts(support_card_list):
 
 # リストをCSVに出力
 def export_to_csv(support_card_list, output_file):
-    keys = ['supportCardOrder', 'name', 'rarity', 'produceSkillOrder', 'supportCardLevel', 'text']
+    keys = ['rarity', 'type', 'name', 'supportCardOrder', 'produceSkillOrder', 'supportCardLevel', 'text']
     with open(output_file, 'w', encoding='utf-8-sig', newline='') as output_file:  # UTF-8 BOM付き
         dict_writer = csv.DictWriter(output_file, fieldnames=keys)
         dict_writer.writeheader()
