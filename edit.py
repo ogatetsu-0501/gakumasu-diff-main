@@ -15,7 +15,9 @@ for card in support_card_data:
     name = card['name']
     id_ = card['id']
     type_ = card['type'].replace('SupportCardType_', 'SupportCardProduceSkillLevel')
-    support_card_list.append({'name': name, 'id': id_, 'type': type_})
+    order = card['order']
+    rarity = card['rarity']
+    support_card_list.append({'name': name, 'id': id_, 'type': type_, 'order': order, 'rarity': rarity})
 
 # 追加情報取得
 def update_list_with_produce_skill(support_card_list):
@@ -31,10 +33,15 @@ def update_list_with_produce_skill(support_card_list):
         matching_groups.sort(key=lambda x: x['order'])
         
         for group in matching_groups:
-            updated_card = card.copy()
-            updated_card['supportCardLevel'] = group['supportCardLevel']
-            updated_card['produceSkillId'] = group['produceSkillId']
-            updated_card['produceSkillLevel'] = group['produceSkillLevel']
+            updated_card = {
+                'supportCardOrder': card['order'],
+                'name': card['name'],
+                'rarity': card['rarity'],
+                'produceSkillOrder': group['order'],
+                'supportCardLevel': group['supportCardLevel'],
+                'produceSkillId': group['produceSkillId'],
+                'produceSkillLevel': group['produceSkillLevel']
+            }
             updated_list.append(updated_card)
     
     return updated_list
@@ -52,11 +59,14 @@ def add_description_texts(support_card_list):
 
 # リストをCSVに出力
 def export_to_csv(support_card_list, output_file):
-    keys = support_card_list[0].keys()
+    keys = ['supportCardOrder', 'name', 'rarity', 'produceSkillOrder', 'supportCardLevel', 'text']
     with open(output_file, 'w', encoding='utf-8-sig', newline='') as output_file:  # UTF-8 BOM付き
-        dict_writer = csv.DictWriter(output_file, keys)
+        dict_writer = csv.DictWriter(output_file, fieldnames=keys)
         dict_writer.writeheader()
-        dict_writer.writerows(support_card_list)
+        for card in support_card_list:
+            # 不要なキーを削除してから書き込む
+            filtered_card = {key: card[key] for key in keys}
+            dict_writer.writerow(filtered_card)
 
 # メイン処理
 updated_support_card_list = update_list_with_produce_skill(support_card_list)
