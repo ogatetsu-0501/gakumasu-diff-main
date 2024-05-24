@@ -1,6 +1,7 @@
 import yaml
 import csv
 import os
+import re
 
 # YAMLファイルを読み込む関数
 def read_yaml(file_path):
@@ -56,11 +57,24 @@ def add_description_texts(support_card_list):
             if skill['id'] == card['produceSkillId'] and skill['level'] == card['produceSkillLevel']:
                 texts = ' '.join([desc['text'] for desc in skill['descriptions']])
                 card['text'] = texts
+                card['param'] = ', '.join(re.findall(r'\d+', texts))
+                card['produceEffectId1'] = skill['produceEffectId1']
+                card['produceTriggerId1'] = skill['produceTriggerId1']
+                card['activationRatePermil1'] = skill['activationRatePermil1']
+                card['produceEffectId2'] = skill['produceEffectId2']
+                card['produceTriggerId2'] = skill['produceTriggerId2']
+                card['activationRatePermil2'] = skill['activationRatePermil2']
+                card['produceEffectId3'] = skill['produceEffectId3']
+                card['produceTriggerId3'] = skill['produceTriggerId3']
+                card['activationRatePermil3'] = skill['activationRatePermil3']
                 break
 
 # リストをCSVに出力
 def export_to_csv(support_card_list, output_file):
-    keys = ['rarity', 'type', 'name', 'supportCardOrder', 'produceSkillOrder', 'supportCardLevel', 'text']
+    keys = ['rarity', 'type', 'name', 'supportCardOrder', 'produceSkillOrder', 'supportCardLevel', 'text', 'param', 
+            'produceEffectId1', 'produceTriggerId1', 'activationRatePermil1', 
+            'produceEffectId2', 'produceTriggerId2', 'activationRatePermil2', 
+            'produceEffectId3', 'produceTriggerId3', 'activationRatePermil3']
     with open(output_file, 'w', encoding='utf-8-sig', newline='') as output_file:  # UTF-8 BOM付き
         dict_writer = csv.DictWriter(output_file, fieldnames=keys)
         dict_writer.writeheader()
