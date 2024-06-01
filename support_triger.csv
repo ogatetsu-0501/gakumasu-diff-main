@@ -87,3 +87,5 @@ Pポイント加算,p_effect-produce_point_addition-
 【ダンスレッスン・ダンスターンのみ】ターン開始時、スキルカード使用数追加+1（レッスン内1回）,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-027-0-0
 メンタルカード,p_effect-produce_reward-0001_0001-produce_card-p_card-00-sup-3_037-0
 お出かけ終了時、体力回復9,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-015-0-0
+メンタルカード,p_effect-produce_reward-0001_0001-produce_card-p_card-01-sup-2_087-0
+メンタルカード,p_effect-produce_reward-0001_0001-produce_card-p_card-00-sup-3_088-0
