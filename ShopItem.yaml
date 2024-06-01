@@ -189,6 +189,62 @@
   startTime: "1715824800000"
   endTime: "1719539999000"
   order: 1
+- id: shop_jewel_item-0010
+  shopId: shop_jewel
+  name: 【1回きりお得！】ジュエル6,000個（6/28まで）
+  labelTypes:
+  - ShopItemLabelType_Sale
+  isBig: false
+  isAppeal: false
+  assetId: "0010"
+  shopProductId: coin_0010
+  totalJewelQuantity: 0
+  paidOnlyJewelQuantity: 0
+  rewards: []
+  unlockConditionSetId: cd-view-shop_jewel_item-0010
+  resetTimingType: ResetTimingType_Never
+  resetHour: 0
+  resetMinute: 0
+  resetWeekday: Weekday_Unknown
+  resetDay: 0
+  purchaseLimit: 1
+  startTime: "1717207200000"
+  endTime: "1719536399000"
+  order: 2
+- id: shop_pack_hume-0001
+  shopId: shop_pack
+  name: 【72時間限定】プロデュースアイドルピースパック（佑芽）
+  labelTypes:
+  - ShopItemLabelType_Recommend
+  isBig: false
+  isAppeal: false
+  assetId: "0018"
+  shopProductId: ""
+  totalJewelQuantity: 0
+  paidOnlyJewelQuantity: 2000
+  rewards:
+  - resourceType: ResourceType_Item
+    resourceId: item-piece-idol_hume-3-000
+    quantity: 50
+  - resourceType: ResourceType_Item
+    resourceId: item-limitovermaterial-2
+    quantity: 800
+  - resourceType: ResourceType_Item
+    resourceId: item-limitovermaterial-2-b-1
+    quantity: 200
+  - resourceType: ResourceType_Item
+    resourceId: item-limitovermaterial-2-b-2
+    quantity: 200
+  unlockConditionSetId: cd-mission_clear-view-shop_pack_hume-0001-72-hour
+  resetTimingType: ResetTimingType_Never
+  resetHour: 0
+  resetMinute: 0
+  resetWeekday: Weekday_Unknown
+  resetDay: 0
+  purchaseLimit: 1
+  startTime: "0"
+  endTime: "0"
+  order: 300
 - id: shop_pack_item-0001
   shopId: shop_pack
   name: 【24時間限定】入学記念パック
@@ -222,7 +278,7 @@
   purchaseLimit: 1
   startTime: "0"
   endTime: "0"
-  order: 200
+  order: 201
 - id: shop_pack_item-0002
   shopId: shop_pack
   name: 【14日間限定】新人プロデューサー応援パック
@@ -253,7 +309,7 @@
   purchaseLimit: 1
   startTime: "0"
   endTime: "0"
-  order: 1200
+  order: 200
 - id: shop_pack_item-0003
   shopId: shop_pack
   name: 毎週支給！初星パック
@@ -674,6 +730,132 @@
   startTime: "0"
   endTime: "0"
   order: 1100
+- id: shop_pack_item-100dl
+  shopId: shop_pack
+  name: 【100万DL記念】育成パック（6/28まで）
+  labelTypes: []
+  isBig: false
+  isAppeal: false
+  assetId: "0019"
+  shopProductId: ""
+  totalJewelQuantity: 0
+  paidOnlyJewelQuantity: 0
+  rewards:
+  - resourceType: ResourceType_Item
+    resourceId: item-support_card_enhance_point
+    quantity: 10000
+  - resourceType: ResourceType_Item
+    resourceId: item-money
+    quantity: 100000
+  - resourceType: ResourceType_Item
+    resourceId: item-limitovermaterial-1
+    quantity: 100
+  - resourceType: ResourceType_Item
+    resourceId: item-limitovermaterial-2
+    quantity: 100
+  unlockConditionSetId: ""
+  resetTimingType: ResetTimingType_Never
+  resetHour: 0
+  resetMinute: 0
+  resetWeekday: Weekday_Unknown
+  resetDay: 0
+  purchaseLimit: 1
+  startTime: "1716948000000"
+  endTime: "1719536399000"
+  order: 240
+- id: shop_pack_item-childsmock-01
+  shopId: shop_pack
+  name: 【100万DL記念】チャイルドスモックパックA（6/28まで）
+  labelTypes:
+  - ShopItemLabelType_Recommend
+  isBig: false
+  isAppeal: false
+  assetId: "0015"
+  shopProductId: ""
+  totalJewelQuantity: 0
+  paidOnlyJewelQuantity: 1500
+  rewards:
+  - resourceType: ResourceType_Costume
+    resourceId: hski-cstm-0069
+    quantity: 1
+  - resourceType: ResourceType_Costume
+    resourceId: kllj-cstm-0069
+    quantity: 1
+  - resourceType: ResourceType_Costume
+    resourceId: hrnm-cstm-0069
+    quantity: 1
+  unlockConditionSetId: ""
+  resetTimingType: ResetTimingType_Never
+  resetHour: 0
+  resetMinute: 0
+  resetWeekday: Weekday_Unknown
+  resetDay: 0
+  purchaseLimit: 1
+  startTime: "1716948000000"
+  endTime: "1719536399000"
+  order: 250
+- id: shop_pack_item-childsmock-02
+  shopId: shop_pack
+  name: 【100万DL記念】チャイルドスモックパックB（6/28まで）
+  labelTypes:
+  - ShopItemLabelType_Recommend
+  isBig: false
+  isAppeal: false
+  assetId: "0016"
+  shopProductId: ""
+  totalJewelQuantity: 0
+  paidOnlyJewelQuantity: 1500
+  rewards:
+  - resourceType: ResourceType_Costume
+    resourceId: ttmr-cstm-0069
+    quantity: 1
+  - resourceType: ResourceType_Costume
+    resourceId: amao-cstm-0069
+    quantity: 1
+  - resourceType: ResourceType_Costume
+    resourceId: shro-cstm-0069
+    quantity: 1
+  unlockConditionSetId: ""
+  resetTimingType: ResetTimingType_Never
+  resetHour: 0
+  resetMinute: 0
+  resetWeekday: Weekday_Unknown
+  resetDay: 0
+  purchaseLimit: 1
+  startTime: "1716948000000"
+  endTime: "1719536399000"
+  order: 251
+- id: shop_pack_item-childsmock-03
+  shopId: shop_pack
+  name: 【100万DL記念】チャイルドスモックパックC（6/28まで）
+  labelTypes:
+  - ShopItemLabelType_Recommend
+  isBig: false
+  isAppeal: false
+  assetId: "0017"
+  shopProductId: ""
+  totalJewelQuantity: 0
+  paidOnlyJewelQuantity: 1500
+  rewards:
+  - resourceType: ResourceType_Costume
+    resourceId: fktn-cstm-0069
+    quantity: 1
+  - resourceType: ResourceType_Costume
+    resourceId: kcna-cstm-0069
+    quantity: 1
+  - resourceType: ResourceType_Costume
+    resourceId: ssmk-cstm-0069
+    quantity: 1
+  unlockConditionSetId: ""
+  resetTimingType: ResetTimingType_Never
+  resetHour: 0
+  resetMinute: 0
+  resetWeekday: Weekday_Unknown
+  resetDay: 0
+  purchaseLimit: 1
+  startTime: "1716948000000"
+  endTime: "1719536399000"
+  order: 252
 - id: shop_pass_item-0001
   shopId: shop_pass
   name: プレミアムミッションパス 2024年5月
@@ -698,4 +880,29 @@
   purchaseLimit: 1
   startTime: "1711915200000"
   endTime: "1717358399000"
-  order: 1
+  order: 100000
+- id: shop_pass_item-0002
+  shopId: shop_pass
+  name: プレミアムミッションパス 2024年6月
+  labelTypes:
+  - ShopItemLabelType_Recommend
+  isBig: false
+  isAppeal: false
+  assetId: "0002"
+  shopProductId: pass_0001
+  totalJewelQuantity: 0
+  paidOnlyJewelQuantity: 0
+  rewards:
+  - resourceType: ResourceType_MissionPassPremiumPass
+    resourceId: mission_pass-2024-06
+    quantity: 1
+  unlockConditionSetId: cd_time_24_0603_0701
+  resetTimingType: ResetTimingType_Never
+  resetHour: 0
+  resetMinute: 0
+  resetWeekday: Weekday_Unknown
+  resetDay: 0
+  purchaseLimit: 1
+  startTime: "1717358400000"
+  endTime: "1719777599000"
+  order: 100000

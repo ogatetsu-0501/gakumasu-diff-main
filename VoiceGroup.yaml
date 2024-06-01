@@ -46,6 +46,18 @@
   facialAssetId: ""
   bodyAssetId: ""
   order: 2
+- id: voice_group-amao-cstm-0069-cmmn
+  voiceAssetId: sud_vo_system_amao-cstm-0069_01
+  title: チャイルドスモック
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 1
+- id: voice_group-amao-cstm-0069-cmmn
+  voiceAssetId: sud_vo_system_amao-cstm-0069_02
+  title: チャイルドスモック
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 2
 - id: voice_group-amao-trng-0000-cmmn
   voiceAssetId: sud_vo_system_amao-trng-0000_01
   title: レッスンウェア
@@ -441,6 +453,102 @@
   title: プロデュース④
   facialAssetId: ""
   bodyAssetId: mot_all_chr_cmmn_yes-a-003_in
+  order: 13
+- id: voice_group-cidol-hume-1-000-detail
+  voiceAssetId: sud_vo_system_hume-schl-0000_01
+  title: 着替え①
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 30
+- id: voice_group-cidol-hume-1-000-detail
+  voiceAssetId: sud_vo_system_hume-schl-0000_02
+  title: 着替え②
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 31
+- id: voice_group-cidol-hume-2-000-detail
+  voiceAssetId: sud_vo_system_hume-cstm-0000_01
+  title: 着替え①
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 30
+- id: voice_group-cidol-hume-2-000-detail
+  voiceAssetId: sud_vo_system_hume-cstm-0000_02
+  title: 着替え②
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 31
+- id: voice_group-cidol-hume-3-000_home
+  voiceAssetId: sud_vo_system_cidol-hume-3-000_home_cmmn-01
+  title: ホーム①
+  facialAssetId: ""
+  bodyAssetId: mot_all_chr_cmmn_tereru-b-001_in
+  order: 1
+- id: voice_group-cidol-hume-3-000_home
+  voiceAssetId: sud_vo_system_cidol-hume-3-000_home_cmmn-02
+  title: ホーム②
+  facialAssetId: ""
+  bodyAssetId: mot_all_chr_cmmn_koufun-b-002_in
+  order: 2
+- id: voice_group-cidol-hume-3-000_home
+  voiceAssetId: sud_vo_system_cidol-hume-3-000_home_cmmn-03
+  title: ホーム③
+  facialAssetId: ""
+  bodyAssetId: mot_all_chr_cmmn_henji-b-001_in
+  order: 3
+- id: voice_group-cidol-hume-3-000-detail
+  voiceAssetId: sud_vo_system_cidol-hume-3-000_home_cmmn-01
+  title: ホーム①
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 1
+- id: voice_group-cidol-hume-3-000-detail
+  voiceAssetId: sud_vo_system_cidol-hume-3-000_home_cmmn-02
+  title: ホーム②
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 2
+- id: voice_group-cidol-hume-3-000-detail
+  voiceAssetId: sud_vo_system_cidol-hume-3-000_home_cmmn-03
+  title: ホーム③
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 3
+- id: voice_group-cidol-hume-3-000-detail
+  voiceAssetId: sud_vo_system_hume-cstm-0010_01
+  title: 着替え①
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 30
+- id: voice_group-cidol-hume-3-000-detail
+  voiceAssetId: sud_vo_system_hume-cstm-0010_02
+  title: 着替え②
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 31
+- id: voice_group-cidol-hume-3-000-produce_schedule
+  voiceAssetId: sud_vo_system_cidol-hume-3-000_produce_schedule-01
+  title: プロデュース①
+  facialAssetId: ""
+  bodyAssetId: mot_all_chr_cmmn_think-002_in
+  order: 10
+- id: voice_group-cidol-hume-3-000-produce_schedule
+  voiceAssetId: sud_vo_system_cidol-hume-3-000_produce_schedule-02
+  title: プロデュース②
+  facialAssetId: ""
+  bodyAssetId: mot_all_chr_hume_glad-002_in
+  order: 11
+- id: voice_group-cidol-hume-3-000-produce_schedule
+  voiceAssetId: sud_vo_system_cidol-hume-3-000_produce_schedule-03
+  title: プロデュース③
+  facialAssetId: ""
+  bodyAssetId: mot_all_chr_cmmn_komaru-b-001_in
+  order: 12
+- id: voice_group-cidol-hume-3-000-produce_schedule
+  voiceAssetId: sud_vo_system_cidol-hume-3-000_produce_schedule-04
+  title: プロデュース④
+  facialAssetId: ""
+  bodyAssetId: mot_all_chr_cmmn_yaruki-b-001_in
   order: 13
 - id: voice_group-cidol-kcna-1-000-detail
   voiceAssetId: sud_vo_system_kcna-casl-0000_01
@@ -1030,6 +1138,18 @@
   facialAssetId: ""
   bodyAssetId: ""
   order: 2
+- id: voice_group-fktn-cstm-0069-cmmn
+  voiceAssetId: sud_vo_system_fktn-cstm-0069_01
+  title: チャイルドスモック
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 1
+- id: voice_group-fktn-cstm-0069-cmmn
+  voiceAssetId: sud_vo_system_fktn-cstm-0069_02
+  title: チャイルドスモック
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 2
 - id: voice_group-fktn-trng-0000-cmmn
   voiceAssetId: sud_vo_system_fktn-trng-0000_01
   title: レッスンウェア
@@ -1063,6 +1183,18 @@
 - id: voice_group-hrnm-cstm-0005-cmmn
   voiceAssetId: sud_vo_system_hrnm-cstm-0005_02
   title: clumsy trick
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 2
+- id: voice_group-hrnm-cstm-0069-cmmn
+  voiceAssetId: sud_vo_system_hrnm-cstm-0069_01
+  title: チャイルドスモック
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 1
+- id: voice_group-hrnm-cstm-0069-cmmn
+  voiceAssetId: sud_vo_system_hrnm-cstm-0069_02
+  title: チャイルドスモック
   facialAssetId: ""
   bodyAssetId: ""
   order: 2
@@ -1114,6 +1246,18 @@
   facialAssetId: ""
   bodyAssetId: ""
   order: 2
+- id: voice_group-hski-cstm-0069-cmmn
+  voiceAssetId: sud_vo_system_hski-cstm-0069_01
+  title: チャイルドスモック
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 1
+- id: voice_group-hski-cstm-0069-cmmn
+  voiceAssetId: sud_vo_system_hski-cstm-0069_02
+  title: チャイルドスモック
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 2
 - id: voice_group-hski-schl-0000-cmmn
   voiceAssetId: sud_vo_system_hski-schl-0000_01
   title: 初星学園制服
@@ -1134,6 +1278,54 @@
   order: 1
 - id: voice_group-hski-trng-0000-cmmn
   voiceAssetId: sud_vo_system_hski-trng-0000_02
+  title: レッスンウェア
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 2
+- id: voice_group-hume-cstm-0000-cmmn
+  voiceAssetId: sud_vo_system_hume-cstm-0000_01
+  title: 初（はじめ）
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 1
+- id: voice_group-hume-cstm-0000-cmmn
+  voiceAssetId: sud_vo_system_hume-cstm-0000_02
+  title: 初（はじめ）
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 2
+- id: voice_group-hume-cstm-0010-cmmn
+  voiceAssetId: sud_vo_system_hume-cstm-0010_01
+  title: The Rolling Riceball
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 1
+- id: voice_group-hume-cstm-0010-cmmn
+  voiceAssetId: sud_vo_system_hume-cstm-0010_02
+  title: The Rolling Riceball
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 2
+- id: voice_group-hume-schl-0000-cmmn
+  voiceAssetId: sud_vo_system_hume-schl-0000_01
+  title: 初星学園制服
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 1
+- id: voice_group-hume-schl-0000-cmmn
+  voiceAssetId: sud_vo_system_hume-schl-0000_02
+  title: 初星学園制服
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 2
+- id: voice_group-hume-trng-0000-cmmn
+  voiceAssetId: sud_vo_system_hume-trng-0000_01
+  title: レッスンウェア
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 1
+- id: voice_group-hume-trng-0000-cmmn
+  voiceAssetId: sud_vo_system_hume-trng-0000_02
   title: レッスンウェア
   facialAssetId: ""
   bodyAssetId: ""
@@ -1174,6 +1366,18 @@
   facialAssetId: ""
   bodyAssetId: ""
   order: 2
+- id: voice_group-kcna-cstm-0069-cmmn
+  voiceAssetId: sud_vo_system_kcna-cstm-0069_01
+  title: チャイルドスモック
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 1
+- id: voice_group-kcna-cstm-0069-cmmn
+  voiceAssetId: sud_vo_system_kcna-cstm-0069_02
+  title: チャイルドスモック
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 2
 - id: voice_group-kcna-trng-0000-cmmn
   voiceAssetId: sud_vo_system_kcna-trng-0000_01
   title: レッスンウェア
@@ -1207,6 +1411,18 @@
 - id: voice_group-kllj-cstm-0007-cmmn
   voiceAssetId: sud_vo_system_kllj-cstm-0007_02
   title: 白線
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 2
+- id: voice_group-kllj-cstm-0069-cmmn
+  voiceAssetId: sud_vo_system_kllj-cstm-0069_01
+  title: チャイルドスモック
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 1
+- id: voice_group-kllj-cstm-0069-cmmn
+  voiceAssetId: sud_vo_system_kllj-cstm-0069_02
+  title: チャイルドスモック
   facialAssetId: ""
   bodyAssetId: ""
   order: 2
@@ -1270,6 +1486,18 @@
   facialAssetId: ""
   bodyAssetId: ""
   order: 2
+- id: voice_group-shro-cstm-0069-cmmn
+  voiceAssetId: sud_vo_system_shro-cstm-0069_01
+  title: チャイルドスモック
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 1
+- id: voice_group-shro-cstm-0069-cmmn
+  voiceAssetId: sud_vo_system_shro-cstm-0069_02
+  title: チャイルドスモック
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 2
 - id: voice_group-shro-trng-0000-cmmn
   voiceAssetId: sud_vo_system_shro-trng-0000_01
   title: レッスンウェア
@@ -1303,6 +1531,18 @@
 - id: voice_group-ssmk-cstm-0009-cmmn
   voiceAssetId: sud_vo_system_ssmk-cstm-0009_02
   title: Tame-Lie-One-Step
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 2
+- id: voice_group-ssmk-cstm-0069-cmmn
+  voiceAssetId: sud_vo_system_ssmk-cstm-0069_01
+  title: チャイルドスモック
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 1
+- id: voice_group-ssmk-cstm-0069-cmmn
+  voiceAssetId: sud_vo_system_ssmk-cstm-0069_02
+  title: チャイルドスモック
   facialAssetId: ""
   bodyAssetId: ""
   order: 2
@@ -1375,6 +1615,18 @@
 - id: voice_group-ttmr-cstm-0025-cmmn
   voiceAssetId: sud_vo_system_ttmr-cstm-0025_02
   title: アイヴイ
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 2
+- id: voice_group-ttmr-cstm-0069-cmmn
+  voiceAssetId: sud_vo_system_ttmr-cstm-0069_01
+  title: チャイルドスモック
+  facialAssetId: ""
+  bodyAssetId: ""
+  order: 1
+- id: voice_group-ttmr-cstm-0069-cmmn
+  voiceAssetId: sud_vo_system_ttmr-cstm-0069_02
+  title: チャイルドスモック
   facialAssetId: ""
   bodyAssetId: ""
   order: 2

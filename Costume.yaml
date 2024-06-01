@@ -63,6 +63,19 @@
   viewConditionSetId: ""
   viewStartTime: "0"
   order: 49601
+- id: amao-cstm-0069
+  characterId: amao
+  name: チャイルドスモック
+  motifId: cstm-0069
+  description: チャイルドスモック衣装パックを購入
+  costumeGroupId: ""
+  costumeHeadId: ""
+  voiceGroupId: voice_group-amao-cstm-0069-cmmn
+  resourceOriginType: ResourceOriginType_Shop
+  targetId: shop_pack
+  viewConditionSetId: ""
+  viewStartTime: "1716948000000"
+  order: 49910
 - id: amao-trng-0000
   characterId: amao
   name: レッスンウェア
@@ -141,6 +154,19 @@
   viewConditionSetId: ""
   viewStartTime: "0"
   order: 39601
+- id: fktn-cstm-0069
+  characterId: fktn
+  name: チャイルドスモック
+  motifId: cstm-0069
+  description: チャイルドスモック衣装パックを購入
+  costumeGroupId: ""
+  costumeHeadId: ""
+  voiceGroupId: voice_group-fktn-cstm-0069-cmmn
+  resourceOriginType: ResourceOriginType_Shop
+  targetId: shop_pack
+  viewConditionSetId: ""
+  viewStartTime: "1716948000000"
+  order: 39910
 - id: fktn-trng-0000
   characterId: fktn
   name: レッスンウェア
@@ -206,6 +232,19 @@
   viewConditionSetId: ""
   viewStartTime: "0"
   order: 99601
+- id: hrnm-cstm-0069
+  characterId: hrnm
+  name: チャイルドスモック
+  motifId: cstm-0069
+  description: チャイルドスモック衣装パックを購入
+  costumeGroupId: ""
+  costumeHeadId: ""
+  voiceGroupId: voice_group-hrnm-cstm-0069-cmmn
+  resourceOriginType: ResourceOriginType_Shop
+  targetId: shop_pack
+  viewConditionSetId: ""
+  viewStartTime: "1716948000000"
+  order: 99910
 - id: hrnm-schl-0000
   characterId: hrnm
   name: 初星学園制服
@@ -284,6 +323,19 @@
   viewConditionSetId: ""
   viewStartTime: "0"
   order: 19601
+- id: hski-cstm-0069
+  characterId: hski
+  name: チャイルドスモック
+  motifId: cstm-0069
+  description: チャイルドスモック衣装パックを購入
+  costumeGroupId: ""
+  costumeHeadId: ""
+  voiceGroupId: voice_group-hski-cstm-0069-cmmn
+  resourceOriginType: ResourceOriginType_Shop
+  targetId: shop_pack
+  viewConditionSetId: ""
+  viewStartTime: "1716948000000"
+  order: 19910
 - id: hski-schl-0000
   characterId: hski
   name: 初星学園制服
@@ -323,6 +375,84 @@
   viewConditionSetId: ""
   viewStartTime: "0"
   order: 19901
+- id: hume-cstm-0000
+  characterId: hume
+  name: 初（はじめ）
+  motifId: cstm-0000
+  description: 最初から所持
+  costumeGroupId: ""
+  costumeHeadId: ""
+  voiceGroupId: voice_group-hume-cstm-0000-cmmn
+  resourceOriginType: ResourceOriginType_Unknown
+  targetId: ""
+  viewConditionSetId: ""
+  viewStartTime: "1717207200000"
+  order: 109700
+- id: hume-cstm-0010
+  characterId: hume
+  name: The Rolling Riceball
+  motifId: cstm-0010
+  description: 【The Rolling Riceball】花海 佑芽を入手
+  costumeGroupId: ""
+  costumeHeadId: ""
+  voiceGroupId: voice_group-hume-cstm-0010-cmmn
+  resourceOriginType: ResourceOriginType_IdolCardSkin
+  targetId: i_card-skin-hume-3-000
+  viewConditionSetId: ""
+  viewStartTime: "1717207200000"
+  order: 109600
+- id: hume-cstm-0022
+  characterId: hume
+  name: The Rolling Riceball
+  motifId: cstm-0022
+  description: 【The Rolling Riceball】花海 佑芽の才能開花4段階目で入手
+  costumeGroupId: ""
+  costumeHeadId: ""
+  voiceGroupId: voice_group-hume-cstm-0010-cmmn
+  resourceOriginType: ResourceOriginType_IdolCard
+  targetId: i_card-hume-3-000
+  viewConditionSetId: ""
+  viewStartTime: "1717207200000"
+  order: 109601
+- id: hume-schl-0000
+  characterId: hume
+  name: 初星学園制服
+  motifId: schl-0000
+  description: 最初から所持
+  costumeGroupId: ""
+  costumeHeadId: ""
+  voiceGroupId: voice_group-hume-schl-0000-cmmn
+  resourceOriginType: ResourceOriginType_Unknown
+  targetId: ""
+  viewConditionSetId: ""
+  viewStartTime: "1717207200000"
+  order: 109800
+- id: hume-trng-0000
+  characterId: hume
+  name: レッスンウェア
+  motifId: trng-0000
+  description: 最初から所持
+  costumeGroupId: ""
+  costumeHeadId: ""
+  voiceGroupId: voice_group-hume-trng-0000-cmmn
+  resourceOriginType: ResourceOriginType_Unknown
+  targetId: ""
+  viewConditionSetId: ""
+  viewStartTime: "1717207200000"
+  order: 109900
+- id: hume-trng-0001
+  characterId: hume
+  name: レッスンウェア
+  motifId: trng-0001
+  description: 花海 佑芽のマスターアチーブメントをRank3にする
+  costumeGroupId: ""
+  costumeHeadId: ""
+  voiceGroupId: voice_group-hume-trng-0000-cmmn
+  resourceOriginType: ResourceOriginType_Unknown
+  targetId: ""
+  viewConditionSetId: ""
+  viewStartTime: "1717207200000"
+  order: 109901
 - id: kcna-casl-0000
   characterId: kcna
   name: いつもの私服
@@ -375,6 +505,19 @@
   viewConditionSetId: ""
   viewStartTime: "0"
   order: 69601
+- id: kcna-cstm-0069
+  characterId: kcna
+  name: チャイルドスモック
+  motifId: cstm-0069
+  description: チャイルドスモック衣装パックを購入
+  costumeGroupId: ""
+  costumeHeadId: ""
+  voiceGroupId: voice_group-kcna-cstm-0069-cmmn
+  resourceOriginType: ResourceOriginType_Shop
+  targetId: shop_pack
+  viewConditionSetId: ""
+  viewStartTime: "1716948000000"
+  order: 69910
 - id: kcna-trng-0000
   characterId: kcna
   name: レッスンウェア
@@ -440,6 +583,19 @@
   viewConditionSetId: ""
   viewStartTime: "0"
   order: 59601
+- id: kllj-cstm-0069
+  characterId: kllj
+  name: チャイルドスモック
+  motifId: cstm-0069
+  description: チャイルドスモック衣装パックを購入
+  costumeGroupId: ""
+  costumeHeadId: ""
+  voiceGroupId: voice_group-kllj-cstm-0069-cmmn
+  resourceOriginType: ResourceOriginType_Shop
+  targetId: shop_pack
+  viewConditionSetId: ""
+  viewStartTime: "1716948000000"
+  order: 59910
 - id: kllj-schl-0000
   characterId: kllj
   name: 初星学園制服
@@ -531,6 +687,19 @@
   viewConditionSetId: ""
   viewStartTime: "0"
   order: 89601
+- id: shro-cstm-0069
+  characterId: shro
+  name: チャイルドスモック
+  motifId: cstm-0069
+  description: チャイルドスモック衣装パックを購入
+  costumeGroupId: ""
+  costumeHeadId: ""
+  voiceGroupId: voice_group-shro-cstm-0069-cmmn
+  resourceOriginType: ResourceOriginType_Shop
+  targetId: shop_pack
+  viewConditionSetId: ""
+  viewStartTime: "1716948000000"
+  order: 89910
 - id: shro-trng-0000
   characterId: shro
   name: レッスンウェア
@@ -596,6 +765,19 @@
   viewConditionSetId: ""
   viewStartTime: "0"
   order: 79601
+- id: ssmk-cstm-0069
+  characterId: ssmk
+  name: チャイルドスモック
+  motifId: cstm-0069
+  description: チャイルドスモック衣装パックを購入
+  costumeGroupId: ""
+  costumeHeadId: ""
+  voiceGroupId: voice_group-ssmk-cstm-0069-cmmn
+  resourceOriginType: ResourceOriginType_Shop
+  targetId: shop_pack
+  viewConditionSetId: ""
+  viewStartTime: "1716948000000"
+  order: 79910
 - id: ssmk-schl-0000
   characterId: ssmk
   name: 初星学園制服
@@ -713,6 +895,19 @@
   viewConditionSetId: ""
   viewStartTime: "1716343200000"
   order: 29591
+- id: ttmr-cstm-0069
+  characterId: ttmr
+  name: チャイルドスモック
+  motifId: cstm-0069
+  description: チャイルドスモック衣装パックを購入
+  costumeGroupId: ""
+  costumeHeadId: ""
+  voiceGroupId: voice_group-ttmr-cstm-0069-cmmn
+  resourceOriginType: ResourceOriginType_Shop
+  targetId: shop_pack
+  viewConditionSetId: ""
+  viewStartTime: "1716948000000"
+  order: 29910
 - id: ttmr-trng-0000
   characterId: ttmr
   name: レッスンウェア
