@@ -11,6 +11,8 @@ character_path = os.path.join(current_directory, 'Character.yaml')
 idol_card_potential_path = os.path.join(current_directory, 'IdolCardPotential.yaml')
 character_true_end_bonus_path = os.path.join(current_directory, 'CharacterTrueEndBonus.yaml')
 character_dearness_level_path = os.path.join(current_directory, 'CharacterDearnessLevel.yaml')
+produce_step_audition_difficulty_path = os.path.join(current_directory, 'ProduceStepAuditionDifficulty.yaml')
+produce_exam_battle_config_path = os.path.join(current_directory, 'ProduceExamBattleConfig.yaml')
 
 # YAMLファイルの読み込み
 with open(idol_card_path, 'r', encoding='utf-8') as f:
@@ -27,6 +29,12 @@ with open(character_true_end_bonus_path, 'r', encoding='utf-8') as f:
 
 with open(character_dearness_level_path, 'r', encoding='utf-8') as f:
     character_dearness_level_data = yaml.safe_load(f)
+
+with open(produce_step_audition_difficulty_path, 'r', encoding='utf-8') as f:
+    produce_step_audition_difficulty_data = yaml.safe_load(f)
+
+with open(produce_exam_battle_config_path, 'r', encoding='utf-8') as f:
+    produce_exam_battle_config_data = yaml.safe_load(f)
 
 # キャラクターの辞書を作成
 character_dict = {char['id']: char for char in character_data}
@@ -48,12 +56,24 @@ for dearness in character_dearness_level_data:
         character_dearness_level_dict[dearness['characterId']] = []
     character_dearness_level_dict[dearness['characterId']].append(dearness)
 
+# ProduceStepAuditionDifficultyの辞書を作成
+produce_step_audition_difficulty_dict = {}
+for item in produce_step_audition_difficulty_data:
+    if item['id'] not in produce_step_audition_difficulty_dict:
+        produce_step_audition_difficulty_dict[item['id']] = []
+    produce_step_audition_difficulty_dict[item['id']].append(item)
+
+# ProduceExamBattleConfigの辞書を作成
+produce_exam_battle_config_dict = {item['id']: item for item in produce_exam_battle_config_data}
+
 # CSVファイルのヘッダーを作成
 headers = [
     'id', 'name', 'order', 'planType', 'produceDance', 'produceDanceGrowthRatePermil',
     'produceStamina', 'produceStepAuditionDifficultyId', 'produceVisual',
     'produceVisualGrowthRatePermil', 'produceVocal', 'produceVocalGrowthRatePermil',
-    'rarity', 'idolCardLevelLimitStatusUpId', 'idolCardPotentialId'
+    'rarity', 'idolCardLevelLimitStatusUpId', 'idolCardPotentialId',
+    'MidforceEndScore', 'MidbaseScore', 'Midvocalbolder', 'Middancebolder', 'Midvisualbolder',
+    'FinalforceEndScore', 'FinalbaseScore', 'Finalvocalbolder', 'Finaldancebolder', 'Finalvisualbolder'
 ]
 
 # ポテンシャルのデータに基づいてヘッダーを追加
@@ -118,6 +138,47 @@ for card in idol_card_data:
             rank_data[f'{rank}ProduceVocalGrowthRatePermil'] = potential.get('produceVocalGrowthRatePermil', '')
             rank_data[f'{rank}EffectValue'] = potential.get('effectValue', '')
 
+    # ProduceStepAuditionDifficultyの取得とフィルタリング
+    produce_step_id = card['produceStepAuditionDifficultyId']
+    mid_data = {}
+    final_data = {}
+    if produce_step_id in produce_step_audition_difficulty_dict:
+        difficulties = produce_step_audition_difficulty_dict[produce_step_id]
+        # Mid条件でフィルタリング
+        mid_filtered = [d for d in difficulties if d['produceId'] == 'produce-002' and d['stepType'] == 'ProduceStepType_AuditionMid1']
+        if mid_filtered:
+            mid_filtered = mid_filtered[0]  # 1つだけ使用
+            mid_data['MidforceEndScore'] = mid_filtered.get('forceEndScore', '')
+            mid_data['MidbaseScore'] = mid_filtered.get('baseScore', '')
+            produce_exam_battle_id = mid_filtered.get('produceExamBattleConfigId', '')
+            if produce_exam_battle_id in produce_exam_battle_config_dict:
+                exam_config = produce_exam_battle_config_dict[produce_exam_battle_id]
+                mid_data['Midvocalbolder'] = exam_config.get('vocal', '')
+                mid_data['Middancebolder'] = exam_config.get('dance', '')
+                mid_data['Midvisualbolder'] = exam_config.get('visual', '')
+
+        # Final条件でフィルタリング
+        final_filtered = [d for d in difficulties if d['produceId'] == 'produce-002' and d['stepType'] == 'ProduceStepType_AuditionFinal']
+        if final_filtered:
+            final_filtered = final_filtered[0]  # 1つだけ使用
+            final_data['FinalforceEndScore'] = final_filtered.get('forceEndScore', '')
+            final_data['FinalbaseScore'] = final_filtered.get('baseScore', '')
+            produce_exam_battle_id = final_filtered.get('produceExamBattleConfigId', '')
+            if produce_exam_battle_id in produce_exam_battle_config_dict:
+                exam_config = produce_exam_battle_config_dict[produce_exam_battle_id]
+                final_data['Finalvocalbolder'] = exam_config.get('vocal', '')
+                final_data['Finaldancebolder'] = exam_config.get('dance', '')
+                final_data['Finalvisualbolder'] = exam_config.get('visual', '')
+
+    # rarityの変換
+    rarity_conversion = {
+        "IdolCardRarity_R": "R",
+        "IdolCardRarity_Sr": "SR",
+        "IdolCardRarity_Ssr": "SSR"
+    }
+    rarity_value = card.get('rarity', '')
+    converted_rarity = rarity_conversion.get(rarity_value, rarity_value)
+
     list1_data.append({
         'id': card['id'],
         'name': card.get('name', ''),
@@ -131,12 +192,14 @@ for card in idol_card_data:
         'produceVisualGrowthRatePermil': card.get('produceVisualGrowthRatePermil', ''),
         'produceVocal': card.get('produceVocal', ''),
         'produceVocalGrowthRatePermil': card.get('produceVocalGrowthRatePermil', ''),
-        'rarity': card.get('rarity', ''),
+        'rarity': converted_rarity,
         'idolCardLevelLimitStatusUpId': card.get('idolCardLevelLimitStatusUpId', ''),
         'idolCardPotentialId': card.get('idolCardPotentialId', ''),
         **rank_data,
         **true_end_data,
-        **dearness_data
+        **dearness_data,
+        **mid_data,
+        **final_data
     })
 
 # CSVファイルの書き込み (UTF-8 BOM形式)
