@@ -95,7 +95,7 @@ def add_event_step_details(support_card_list):
 # リストをCSVに出力
 def export_to_csv(support_card_list, output_file):
     # CSVのヘッダーに含めるキーを動的に取得
-    keys = ['rarity', 'type', 'name', 'supportCardOrder', 'produceSkillOrder', 'supportCardLevel', 'text', 'param', 
+    keys = ['rarity', 'type', 'name', 'supportCardOrder', 'produceSkillOrder', 'supportCardLevel', 'text', 
             'produceEffectId1', 'produceTriggerId1', 'activationRatePermil1', 
             'produceEffectId2', 'produceTriggerId2', 'activationRatePermil2', 
             'produceEffectId3', 'produceTriggerId3', 'activationRatePermil3']
