@@ -118,14 +118,14 @@ def get_effect_buf(value):
 # support_card_listの更新
 def update_support_card_list(support_card_list):
     for card in support_card_list:
+        # Effectbuf列の作成
+        card['Effectbuf'] = get_effect_buf(card.get('produceEffectId1'))
+
         # produceEffectId1列の変換
         card['produceEffectId1'] = convert_with_support_triger(card.get('produceEffectId1'))
 
         # produceTriggerId1列の変換
         card['produceTriggerId1'] = support_triger_data.get(card.get('produceTriggerId1'), card.get('produceTriggerId1'))
-
-        # Effectbuf列の作成
-        card['Effectbuf'] = get_effect_buf(card.get('produceEffectId1'))
 
         # Eventbuf1およびEventeffect1の作成
         if card['rarity'] == 'SupportCardRarity_R':
@@ -171,7 +171,7 @@ def transform_support_card_list(support_card_list):
         'Visual': 'ビジュアル',
         'Vocal': 'ボーカル',
         'Dance': 'ダンス',
-        'Assist': 'すべて'
+        'Assist': 'サポート'
     }
 
     rarity_mapping = {
