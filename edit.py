@@ -170,7 +170,8 @@ def transform_support_card_list(support_card_list):
     type_mapping = {
         'Visual': 'ビジュアル',
         'Vocal': 'ボーカル',
-        'Dance': 'ダンス'
+        'Dance': 'ダンス',
+        'Assist': 'すべて'
     }
 
     rarity_mapping = {
@@ -182,7 +183,6 @@ def transform_support_card_list(support_card_list):
     for card in support_card_list:
         card['type'] = type_mapping.get(card['type'], card['type'])
         card['rarity'] = rarity_mapping.get(card['rarity'], card['rarity'])
-        card['supportCardLevel'] = f"Lv{card['supportCardLevel']}"
 
 # メイン処理
 updated_support_card_list = update_list_with_produce_skill(support_card_list)
