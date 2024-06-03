@@ -28,7 +28,8 @@ for card in support_card_data:
     type_ = card['type'].replace('SupportCardType_', 'SupportCardProduceSkillLevel')
     order = card['order']
     rarity = card['rarity']
-    support_card_list.append({'name': name, 'id': id_, 'type': type_, 'order': order, 'rarity': rarity})
+    produce_story_ids = card.get('produceStoryIds', [])
+    support_card_list.append({'name': name, 'id': id_, 'type': type_, 'order': order, 'rarity': rarity, 'produceStoryIds': produce_story_ids})
 
 # 追加情報取得
 def update_list_with_produce_skill(support_card_list):
@@ -53,7 +54,8 @@ def update_list_with_produce_skill(support_card_list):
                 'supportCardLevel': group['supportCardLevel'],
                 'produceSkillId': group['produceSkillId'],
                 'produceSkillLevel': group['produceSkillLevel'],
-                'id': card['id']
+                'id': card['id'],
+                'produceStoryIds': card['produceStoryIds']
             }
             updated_list.append(updated_card)
     
@@ -143,6 +145,62 @@ def update_support_card_list(support_card_list):
         if card['rarity'] in ['SupportCardRarity_Sr', 'SupportCardRarity_Ssr']:
             card['itemcard'] = support_triger_data.get(card.get('EventproduceEffectIds1'), card.get('EventproduceEffectIds1'))
 
+# produceStoryIdsをsupport_card_listに追加する関数
+def add_produce_story_ids(support_card_list):
+    for card in support_card_list:
+        # YAMLファイルからproduceStoryIdsを取得
+        produce_story_ids = card.get('produceStoryIds', [])
+        # produceStoryIds1, produceStoryIds2, produceStoryIds3... の形式でリストに追加
+        for idx, story_id in enumerate(produce_story_ids):
+            card[f'produceStoryIds{idx + 1}'] = story_id
+
+# HTMLタグの削除および改行の置換
+def clean_text(text):
+    text = text.replace('\n', '\\')
+    text = text.replace('</nobr>', '')
+    text = text.replace('<nobr>', '')
+    return text
+
+# ProduceItem.yamlおよびProduceCard.yamlの情報を追加
+def add_produce_story_texts(support_card_list):
+    # YAMLファイルの読み込み
+    step_event_detail_data = read_yaml(os.path.join(current_dir, 'ProduceStepEventDetail.yaml'))
+    produce_item_data = read_yaml(os.path.join(current_dir, 'ProduceItem.yaml'))
+    produce_card_data = read_yaml(os.path.join(current_dir, 'ProduceCard.yaml'))
+
+    for card in support_card_list:
+        for idx in range(1, 4):  # produceStoryIds1, produceStoryIds2, produceStoryIds3の順に処理
+            story_id_key = f'produceStoryIds{idx}'
+            story_text_key = f'produceStoryText{idx}'
+            item_text_key = f'produceitemText{idx}'
+            card_text_key = f'producecardText{idx}'
+            card_type_key = f'producecardType{idx}'
+
+            if story_id_key in card:
+                story_id = card[story_id_key]
+                for step_detail in step_event_detail_data:
+                    if step_detail['produceStoryId'] == story_id:
+                        # descriptionsのtextを繋げてクリーニング
+                        texts = ' '.join([desc['text'] for desc in step_detail['descriptions']])
+                        card[story_text_key] = clean_text(texts)
+                        # targetIdの処理
+                        for desc in step_detail['descriptions']:
+                            target_id = desc['targetId']
+                            if target_id.startswith('pitem'):
+                                for item in produce_item_data:
+                                    if item['id'] == target_id:
+                                        item_texts = ' '.join([d['text'] for d in item['descriptions']])
+                                        card[item_text_key] = clean_text(item_texts)
+                                        break
+                            elif target_id.startswith('p_card'):
+                                for card_data in produce_card_data:
+                                    if card_data['id'] == target_id:
+                                        card_texts = ' '.join([d['text'] for d in card_data['descriptions']])
+                                        card_type = card_data['category']
+                                        card[card_text_key] = clean_text(card_texts)
+                                        card[card_type_key] = card_type
+                                        break
+
 # リストをCSVに出力
 def export_to_csv(support_card_list, output_file):
     # CSVのヘッダーに含めるキーを動的に取得
@@ -151,12 +209,21 @@ def export_to_csv(support_card_list, output_file):
             'produceEffectId2', 'produceTriggerId2', 'activationRatePermil2', 
             'produceEffectId3', 'produceTriggerId3', 'activationRatePermil3',
             'Effectbuf', 'Eventbuf1', 'Eventeffect1', 'Eventbuf2', 'Eventeffect2', 'itemcard']
-    
+
     # 動的に追加されたEventproduceEffectIdsの列を追加
     max_event_effects = max(len([key for key in card.keys() if 'EventproduceEffectIds' in key]) for card in support_card_list)
     for i in range(1, max_event_effects + 1):
         keys.append(f'EventproduceEffectIds{i}')
     
+    # 動的に追加されたproduceStoryIds、produceStoryText、produceitemText、producecardText、producecardTypeの列を追加
+    max_produce_story_ids = max(len([key for key in card.keys() if 'produceStoryIds' in key]) for card in support_card_list)
+    for i in range(1, max_produce_story_ids + 1):
+        keys.append(f'produceStoryIds{i}')
+        keys.append(f'produceStoryText{i}')
+        keys.append(f'produceitemText{i}')
+        keys.append(f'producecardText{i}')
+        keys.append(f'producecardType{i}')
+
     with open(output_file, 'w', encoding='utf-8-sig', newline='') as output_file:  # UTF-8 BOM付き
         dict_writer = csv.DictWriter(output_file, fieldnames=keys)
         dict_writer.writeheader()
@@ -190,6 +257,8 @@ add_description_texts(updated_support_card_list)
 add_event_step_details(updated_support_card_list)
 update_support_card_list(updated_support_card_list)
 transform_support_card_list(updated_support_card_list)
+add_produce_story_ids(updated_support_card_list)  # ここでproduceStoryIdsを追加
+add_produce_story_texts(updated_support_card_list)  # ここでproduceStoryText, produceitemText, producecardText, producecardTypeを追加
 export_to_csv(updated_support_card_list, os.path.join(current_dir, 'output.csv'))
 
 print("CSVファイルが生成されました。")
