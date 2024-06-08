@@ -154,52 +154,68 @@ def add_produce_story_ids(support_card_list):
         for idx, story_id in enumerate(produce_story_ids):
             card[f'produceStoryIds{idx + 1}'] = story_id
 
-# HTMLタグの削除および改行の置換
+import re
+
 def clean_text(text):
-    text = text.replace('\n', '\\')
+    # 2つ以上の連続する空白を1つの空白に置き換える
+    text = re.sub(r'\s{2,}', ' ', text)
+    # 2つ以上の連続する\nを1つの<br>に置き換える
+    text = re.sub(r'\n{2,}', '<br>', text)
+    # テキスト内の</nobr>タグを削除する
     text = text.replace('</nobr>', '')
+    # テキスト内の<nobr>タグを削除する
     text = text.replace('<nobr>', '')
     return text
 
-# ProduceItem.yamlおよびProduceCard.yamlの情報を追加
+
 def add_produce_story_texts(support_card_list):
-    # YAMLファイルの読み込み
+    # YAMLファイルを読み込む
     step_event_detail_data = read_yaml(os.path.join(current_dir, 'ProduceStepEventDetail.yaml'))
     produce_item_data = read_yaml(os.path.join(current_dir, 'ProduceItem.yaml'))
     produce_card_data = read_yaml(os.path.join(current_dir, 'ProduceCard.yaml'))
 
+    # サポートカードリストの各カードに対して処理を行う
     for card in support_card_list:
-        for idx in range(1, 4):  # produceStoryIds1, produceStoryIds2, produceStoryIds3の順に処理
+        # produceStoryIds1, produceStoryIds2, produceStoryIds3を順番に処理する
+        for idx in range(1, 4):
             story_id_key = f'produceStoryIds{idx}'
             story_text_key = f'produceStoryText{idx}'
             item_text_key = f'produceitemText{idx}'
             card_text_key = f'producecardText{idx}'
             card_type_key = f'producecardType{idx}'
 
+            # カードにstory_id_keyがある場合
             if story_id_key in card:
                 story_id = card[story_id_key]
+                # step_event_detail_dataの各ステップ詳細に対して処理を行う
                 for step_detail in step_event_detail_data:
+                    # step_detailのproduceStoryIdがstory_idと一致する場合
                     if step_detail['produceStoryId'] == story_id:
-                        # descriptionsのtextを繋げてクリーニング
+                        # descriptionsのテキストを連結してクリーニングする
                         texts = ' '.join([desc['text'] for desc in step_detail['descriptions']])
                         card[story_text_key] = clean_text(texts)
-                        # targetIdの処理
+                        # descriptionsの各要素に対してtargetIdを処理する
                         for desc in step_detail['descriptions']:
                             target_id = desc['targetId']
+                            # target_idが'pitem'で始まる場合
                             if target_id.startswith('pitem'):
                                 for item in produce_item_data:
                                     if item['id'] == target_id:
+                                        # itemのdescriptionsのテキストを連結してクリーニングする
                                         item_texts = ' '.join([d['text'] for d in item['descriptions']])
                                         card[item_text_key] = clean_text(item_texts)
                                         break
+                            # target_idが'p_card'で始まる場合
                             elif target_id.startswith('p_card'):
                                 for card_data in produce_card_data:
                                     if card_data['id'] == target_id:
+                                        # card_dataのdescriptionsのテキストを連結してクリーニングする
                                         card_texts = ' '.join([d['text'] for d in card_data['descriptions']])
                                         card_type = card_data['category']
                                         card[card_text_key] = clean_text(card_texts)
                                         card[card_type_key] = card_type
                                         break
+
 
 # リストをCSVに出力
 def export_to_csv(support_card_list, output_file):
