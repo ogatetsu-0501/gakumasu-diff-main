@@ -154,18 +154,19 @@ def add_produce_story_ids(support_card_list):
         for idx, story_id in enumerate(produce_story_ids):
             card[f'produceStoryIds{idx + 1}'] = story_id
 
-import re
-
 def clean_text(text):
-    # 2つ以上の連続する空白を1つの空白に置き換える
-    text = re.sub(r'\s{2,}', ' ', text)
-    # 2つ以上の連続する\nを1つの<br>に置き換える
-    text = re.sub(r'\n{2,}', '<br>', text)
-    # テキスト内の</nobr>タグを削除する
+    # 2つ以上の連続する改行を1つの改行に置き換える
+    text = re.sub(r'\n{2,}', '\n', text)
+    # 改行を逆スラッシュに置き換える
+    text = text.replace('\n', '\\')
+    # 全ての空白を削除する
+    text = re.sub(r'\s+', '', text)
+    # </nobr>タグを削除する
     text = text.replace('</nobr>', '')
-    # テキスト内の<nobr>タグを削除する
+    # <nobr>タグを削除する
     text = text.replace('<nobr>', '')
     return text
+
 
 
 def add_produce_story_texts(support_card_list):
