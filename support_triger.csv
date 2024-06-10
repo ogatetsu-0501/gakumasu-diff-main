@@ -68,20 +68,20 @@ Pポイント加算,p_effect-produce_point_addition-
 ビジュアルSPレッスン/ビジュアル400/ランダム強化,p_effect-produce_reward-0001_0001-produce_item-pitem_00-2-030-0-0
 メンタルカード,p_effect-produce_reward-0001_0001-produce_card-p_card-00-sup-2_029-0
 メンタルカード,p_effect-produce_reward-0001_0001-produce_card-p_card-02-sup-2_086-0
-【ビジュアルレッスン・ビジュアルターンのみ】ターン開始時、パラメータ上昇量増加50%（1ターン）（レッスン内3回）,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-009-0-0
+【ビジュアルレッスン・ビジュアルターンのみ】ターン開始時、パラメータ上昇量増加50%（1ターン）\（レッスン内3回）,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-009-0-0
 【ボーカルレッスン・ボーカルターンのみ】ターン開始時、スキルカード使用回数+1,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-010-0-0
 メンタルカード,p_effect-produce_reward-0001_0001-produce_card-p_card-01-sup-3_047-0
-【ビジュアルレッスン・ビジュアルターンのみ】アクティブスキルカード使用時、体力回復2（レッスン内3回）,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-016-0-0
-【ダンスレッスン・ダンスターンのみ】ターン開始時、パラメータ上昇量増加50%（1ターン）（レッスン内3回）,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-012-0-0
+【ビジュアルレッスン・ビジュアルターンのみ】アクティブスキルカード使用時、体力回復2\（レッスン内3回）,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-016-0-0
+【ダンスレッスン・ダンスターンのみ】ターン開始時、パラメータ上昇量増加50%（1ターン）\（レッスン内3回）,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-012-0-0
 メンタルカード,p_effect-produce_reward-0001_0001-produce_card-p_card-00-sup-3_024-0
 メンタルカード,p_effect-produce_reward-0001_0001-produce_card-p_card-00-sup-3_025-0
 【ビジュアルレッスン・ビジュアルターンのみ】ターン開始時、固定元気+2,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-011-0-0
 アクティブカード,p_effect-produce_reward-0001_0001-produce_card-p_card-00-sup-3_026-0
 メンタルカード,p_effect-produce_reward-0001_0001-produce_card-p_card-02-sup-3_023-0
 メンタルカード,p_effect-produce_reward-0001_0001-produce_card-p_card-00-sup-3_027-0
-【ビジュアルレッスン・ビジュアルターンのみ】ターン開始時、スキルカード使用数増加+1（レッスン内1回）,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-026-0-0
-【ボーカルレッスン・ボーカルターンのみ】アクティブスキルカード使用時、体力回復2（レッスン内3回）,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-013-0-0
-【ボーカルレッスン・ボーカルターンのみ】ターン開始時、スキルカードを引く 固定元気+2（レッスン内3回）,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-014-0-0
+【ビジュアルレッスン・ビジュアルターンのみ】ターン開始時、スキルカード使用数増加+1\（レッスン内1回）,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-026-0-0
+【ボーカルレッスン・ボーカルターンのみ】アクティブスキルカード使用時、体力回復2\（レッスン内3回）,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-013-0-0
+【ボーカルレッスン・ボーカルターンのみ】ターン開始時、スキルカードを引く 固定元気+2\（レッスン内3回）,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-014-0-0
 メンタルカード,p_effect-produce_reward-0001_0001-produce_card-p_card-00-sup-3_046-0
 メンタルカード,p_effect-produce_reward-0001_0001-produce_card-p_card-00-sup-3_048-0
 【ダンスレッスン・ダンスターンのみ】ターン開始時、スキルカード使用数追加+1（レッスン内1回）,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-027-0-0
@@ -89,3 +89,5 @@ Pポイント加算,p_effect-produce_point_addition-
 お出かけ//体力回復/+9,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-015-0-0
 メンタルカード,p_effect-produce_reward-0001_0001-produce_card-p_card-01-sup-2_087-0
 メンタルカード,p_effect-produce_reward-0001_0001-produce_card-p_card-00-sup-3_088-0
+【ダンスレッスン・ダンスターンのみ】アクティブスキルカード使用時、体力回復2\（レッスン内3回）,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-053-0-0
+好調カード獲得//ダンス/+6,p_effect-produce_reward-0001_0001-produce_item-pitem_01-2-021-0-0
