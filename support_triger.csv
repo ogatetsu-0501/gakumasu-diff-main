@@ -91,3 +91,4 @@ Pポイント加算,p_effect-produce_point_addition-
 メンタルカード,p_effect-produce_reward-0001_0001-produce_card-p_card-00-sup-3_088-0
 【ダンスレッスン・ダンスターンのみ】アクティブスキルカード使用時、体力回復2\（レッスン内3回）,p_effect-produce_reward-0001_0001-produce_item-pitem_00-3-053-0-0
 好調カード獲得//ダンス/+6,p_effect-produce_reward-0001_0001-produce_item-pitem_01-2-021-0-0
+好印象カード獲得//ビジュアル/+6,p_effect-produce_reward-0001_0001-produce_item-pitem_02-2-023-0-0
