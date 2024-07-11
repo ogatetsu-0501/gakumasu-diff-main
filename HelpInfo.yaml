@@ -441,9 +441,9 @@
   openHelpContentId: story-story-support-card
 - type: StoryEventList
   helpCategoryIds:
-  - help-story-event
-  openHelpCategoryId: help-story-event
-  openHelpContentId: ""
+  - help-story
+  openHelpCategoryId: help-story
+  openHelpContentId: story-story-event-story
 - type: MainTaskTop
   helpCategoryIds:
   - help-home
@@ -793,7 +793,8 @@
   openHelpCategoryId: help-main-story-event
   openHelpContentId: help-main-story-event-story
 - type: StoryEventTopBoxGasha
-  helpCategoryIds: []
+  helpCategoryIds:
+  - help-box-gasha-event
   openHelpCategoryId: ""
   openHelpContentId: ""
 - type: StoryEventMissionMainStory
@@ -802,21 +803,25 @@
   openHelpCategoryId: help-main-story-event
   openHelpContentId: help-main-story-event-mission
 - type: StoryEventBoxGashaDetail
-  helpCategoryIds: []
+  helpCategoryIds:
+  - help-box-gasha-event
   openHelpCategoryId: ""
   openHelpContentId: ""
 - type: StoryEventBoxGashaResult
-  helpCategoryIds: []
+  helpCategoryIds:
+  - help-box-gasha-event
   openHelpCategoryId: ""
   openHelpContentId: ""
 - type: TowerTop
-  helpCategoryIds: []
-  openHelpCategoryId: ""
-  openHelpContentId: ""
+  helpCategoryIds:
+  - help-tower
+  openHelpCategoryId: help-tower
+  openHelpContentId: tower
 - type: TowerStage
-  helpCategoryIds: []
-  openHelpCategoryId: ""
-  openHelpContentId: ""
+  helpCategoryIds:
+  - help-tower
+  openHelpCategoryId: help-tower
+  openHelpContentId: tower
 - type: GashaAnimation
   helpCategoryIds: []
   openHelpCategoryId: ""
@@ -835,3 +840,36 @@
   - help-achievement
   openHelpCategoryId: help-achievement
   openHelpContentId: achievement-others
+- type: CardExchangeAnimation
+  helpCategoryIds: []
+  openHelpCategoryId: ""
+  openHelpContentId: ""
+- type: MediaFourPanelComic
+  helpCategoryIds:
+  - help-menu
+  openHelpCategoryId: help-menu
+  openHelpContentId: menu-media
+- type: TowerResult
+  helpCategoryIds: []
+  openHelpCategoryId: ""
+  openHelpContentId: ""
+- type: PvpRateRehearsal
+  helpCategoryIds:
+  - help-contest
+  openHelpCategoryId: help-contest
+  openHelpContentId: ""
+- type: TowerBattleConfirm
+  helpCategoryIds:
+  - help-tower
+  openHelpCategoryId: help-tower
+  openHelpContentId: tower
+- type: TowerMainMemorySelect
+  helpCategoryIds:
+  - help-tower
+  openHelpCategoryId: help-tower
+  openHelpContentId: memory-memory-tower
+- type: TowerSubMemorySelect
+  helpCategoryIds:
+  - help-tower
+  openHelpCategoryId: help-tower
+  openHelpContentId: memory-memory-tower

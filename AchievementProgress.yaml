@@ -1,3 +1,36 @@
+- achievementId: achieve-i_card-amao-3-001-01
+  threshold: 1
+  assetId: img_general_achievement_amao-3-001_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 20
+  - resourceType: ResourceType_UserExp
+    resourceId: ""
+    quantity: 250
+  index: 0
+- achievementId: achieve-i_card-amao-3-001-02
+  threshold: 3
+  assetId: img_general_achievement_amao-3-001_002
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 20
+  - resourceType: ResourceType_UserExp
+    resourceId: ""
+    quantity: 1000
+  index: 0
+- achievementId: achieve-i_card-amao-3-001-03
+  threshold: 1
+  assetId: img_general_achievement_amao-3-001_003
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  - resourceType: ResourceType_UserExp
+    resourceId: ""
+    quantity: 1500
+  index: 0
 - achievementId: achieve-i_card-fktn-3-001-01
   threshold: 1
   assetId: img_general_achievement_fktn-3-001_001
@@ -130,6 +163,39 @@
     resourceId: ""
     quantity: 1500
   index: 0
+- achievementId: achieve-i_card-ssmk-3-001-01
+  threshold: 1
+  assetId: img_general_achievement_ssmk-3-001_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 20
+  - resourceType: ResourceType_UserExp
+    resourceId: ""
+    quantity: 250
+  index: 0
+- achievementId: achieve-i_card-ssmk-3-001-02
+  threshold: 3
+  assetId: img_general_achievement_ssmk-3-001_002
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 20
+  - resourceType: ResourceType_UserExp
+    resourceId: ""
+    quantity: 1000
+  index: 0
+- achievementId: achieve-i_card-ssmk-3-001-03
+  threshold: 1
+  assetId: img_general_achievement_ssmk-3-001_003
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  - resourceType: ResourceType_UserExp
+    resourceId: ""
+    quantity: 1500
+  index: 0
 - achievementId: achieve-i_card-ttmr-3-001-01
   threshold: 1
   assetId: img_general_achievement_ttmr-3-001_001
@@ -217,6 +283,14 @@
     resourceId: ""
     quantity: 100
   index: 5
+- achievementId: achieve-m_amao-001
+  threshold: 150
+  assetId: img_general_achievement_amao-master_004
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 100
+  index: 6
 - achievementId: achieve-m_fktn-001
   threshold: 10
   assetId: img_general_achievement_fktn-master_001
@@ -271,6 +345,14 @@
     resourceId: ""
     quantity: 100
   index: 5
+- achievementId: achieve-m_fktn-001
+  threshold: 150
+  assetId: img_general_achievement_fktn-master_004
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 100
+  index: 6
 - achievementId: achieve-m_hrnm-001
   threshold: 10
   assetId: img_general_achievement_hrnm-master_001
@@ -325,6 +407,14 @@
     resourceId: ""
     quantity: 100
   index: 5
+- achievementId: achieve-m_hrnm-001
+  threshold: 150
+  assetId: img_general_achievement_hrnm-master_004
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 100
+  index: 6
 - achievementId: achieve-m_hski-001
   threshold: 10
   assetId: img_general_achievement_hski-master_001
@@ -379,6 +469,14 @@
     resourceId: ""
     quantity: 100
   index: 5
+- achievementId: achieve-m_hski-001
+  threshold: 150
+  assetId: img_general_achievement_hski-master_004
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 100
+  index: 6
 - achievementId: achieve-m_hume-001
   threshold: 10
   assetId: img_general_achievement_hume-master_001
@@ -487,6 +585,14 @@
     resourceId: ""
     quantity: 100
   index: 5
+- achievementId: achieve-m_kcna-001
+  threshold: 150
+  assetId: img_general_achievement_kcna-master_004
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 100
+  index: 6
 - achievementId: achieve-m_kllj-001
   threshold: 10
   assetId: img_general_achievement_kllj-master_001
@@ -541,6 +647,14 @@
     resourceId: ""
     quantity: 100
   index: 5
+- achievementId: achieve-m_kllj-001
+  threshold: 150
+  assetId: img_general_achievement_kllj-master_004
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 100
+  index: 6
 - achievementId: achieve-m_shro-001
   threshold: 10
   assetId: img_general_achievement_shro-master_001
@@ -595,6 +709,14 @@
     resourceId: ""
     quantity: 100
   index: 5
+- achievementId: achieve-m_shro-001
+  threshold: 150
+  assetId: img_general_achievement_shro-master_004
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 100
+  index: 6
 - achievementId: achieve-m_ssmk-001
   threshold: 10
   assetId: img_general_achievement_ssmk-master_001
@@ -649,6 +771,14 @@
     resourceId: ""
     quantity: 100
   index: 5
+- achievementId: achieve-m_ssmk-001
+  threshold: 150
+  assetId: img_general_achievement_ssmk-master_004
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 100
+  index: 6
 - achievementId: achieve-m_ttmr-001
   threshold: 10
   assetId: img_general_achievement_ttmr-master_001
@@ -703,6 +833,14 @@
     resourceId: ""
     quantity: 100
   index: 5
+- achievementId: achieve-m_ttmr-001
+  threshold: 150
+  assetId: img_general_achievement_ttmr-master_004
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 100
+  index: 6
 - achievementId: achieve-o_001
   threshold: 1
   assetId: img_general_achievement_common_001
@@ -2735,6 +2873,54 @@
     resourceId: ""
     quantity: 30
   index: 0
+- achievementId: achieve-p_idol-amao-015
+  threshold: 5
+  assetId: img_general_achievement_amao-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 0
+- achievementId: achieve-p_idol-amao-015
+  threshold: 10
+  assetId: img_general_achievement_amao-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 1
+- achievementId: achieve-p_idol-amao-015
+  threshold: 20
+  assetId: img_general_achievement_amao-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 2
+- achievementId: achieve-p_idol-amao-015
+  threshold: 30
+  assetId: img_general_achievement_amao-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 3
+- achievementId: achieve-p_idol-amao-015
+  threshold: 45
+  assetId: img_general_achievement_amao-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 4
+- achievementId: achieve-p_idol-amao-015
+  threshold: 60
+  assetId: img_general_achievement_amao-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 5
 - achievementId: achieve-p_idol-card-amao-002-1
   threshold: 1
   assetId: img_general_achievement_amao-2-000_001
@@ -3917,6 +4103,54 @@
     resourceId: ""
     quantity: 30
   index: 0
+- achievementId: achieve-p_idol-fktn-015
+  threshold: 5
+  assetId: img_general_achievement_fktn-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 0
+- achievementId: achieve-p_idol-fktn-015
+  threshold: 10
+  assetId: img_general_achievement_fktn-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 1
+- achievementId: achieve-p_idol-fktn-015
+  threshold: 20
+  assetId: img_general_achievement_fktn-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 2
+- achievementId: achieve-p_idol-fktn-015
+  threshold: 30
+  assetId: img_general_achievement_fktn-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 3
+- achievementId: achieve-p_idol-fktn-015
+  threshold: 45
+  assetId: img_general_achievement_fktn-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 4
+- achievementId: achieve-p_idol-fktn-015
+  threshold: 60
+  assetId: img_general_achievement_fktn-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 5
 - achievementId: achieve-p_idol-hrnm-000
   threshold: 1
   assetId: img_general_achievement_char_hrnm-011
@@ -4505,6 +4739,54 @@
     resourceId: ""
     quantity: 30
   index: 0
+- achievementId: achieve-p_idol-hrnm-015
+  threshold: 5
+  assetId: img_general_achievement_hrnm-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 0
+- achievementId: achieve-p_idol-hrnm-015
+  threshold: 10
+  assetId: img_general_achievement_hrnm-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 1
+- achievementId: achieve-p_idol-hrnm-015
+  threshold: 20
+  assetId: img_general_achievement_hrnm-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 2
+- achievementId: achieve-p_idol-hrnm-015
+  threshold: 30
+  assetId: img_general_achievement_hrnm-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 3
+- achievementId: achieve-p_idol-hrnm-015
+  threshold: 45
+  assetId: img_general_achievement_hrnm-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 4
+- achievementId: achieve-p_idol-hrnm-015
+  threshold: 60
+  assetId: img_general_achievement_hrnm-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 5
 - achievementId: achieve-p_idol-hski-000
   threshold: 1
   assetId: img_general_achievement_char_hski-011
@@ -5093,6 +5375,54 @@
     resourceId: ""
     quantity: 30
   index: 0
+- achievementId: achieve-p_idol-hski-015
+  threshold: 5
+  assetId: img_general_achievement_hski-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 0
+- achievementId: achieve-p_idol-hski-015
+  threshold: 10
+  assetId: img_general_achievement_hski-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 1
+- achievementId: achieve-p_idol-hski-015
+  threshold: 20
+  assetId: img_general_achievement_hski-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 2
+- achievementId: achieve-p_idol-hski-015
+  threshold: 30
+  assetId: img_general_achievement_hski-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 3
+- achievementId: achieve-p_idol-hski-015
+  threshold: 45
+  assetId: img_general_achievement_hski-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 4
+- achievementId: achieve-p_idol-hski-015
+  threshold: 60
+  assetId: img_general_achievement_hski-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 5
 - achievementId: achieve-p_idol-hume-000
   threshold: 1
   assetId: img_general_achievement_char_hume-011
@@ -5681,6 +6011,54 @@
     resourceId: ""
     quantity: 30
   index: 0
+- achievementId: achieve-p_idol-hume-015
+  threshold: 5
+  assetId: img_general_achievement_hume-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 0
+- achievementId: achieve-p_idol-hume-015
+  threshold: 10
+  assetId: img_general_achievement_hume-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 1
+- achievementId: achieve-p_idol-hume-015
+  threshold: 20
+  assetId: img_general_achievement_hume-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 2
+- achievementId: achieve-p_idol-hume-015
+  threshold: 30
+  assetId: img_general_achievement_hume-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 3
+- achievementId: achieve-p_idol-hume-015
+  threshold: 45
+  assetId: img_general_achievement_hume-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 4
+- achievementId: achieve-p_idol-hume-015
+  threshold: 60
+  assetId: img_general_achievement_hume-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 5
 - achievementId: achieve-p_idol-kcna-000
   threshold: 1
   assetId: img_general_achievement_char_kcna-011
@@ -6269,6 +6647,54 @@
     resourceId: ""
     quantity: 30
   index: 0
+- achievementId: achieve-p_idol-kcna-015
+  threshold: 5
+  assetId: img_general_achievement_kcna-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 0
+- achievementId: achieve-p_idol-kcna-015
+  threshold: 10
+  assetId: img_general_achievement_kcna-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 1
+- achievementId: achieve-p_idol-kcna-015
+  threshold: 20
+  assetId: img_general_achievement_kcna-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 2
+- achievementId: achieve-p_idol-kcna-015
+  threshold: 30
+  assetId: img_general_achievement_kcna-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 3
+- achievementId: achieve-p_idol-kcna-015
+  threshold: 45
+  assetId: img_general_achievement_kcna-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 4
+- achievementId: achieve-p_idol-kcna-015
+  threshold: 60
+  assetId: img_general_achievement_kcna-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 5
 - achievementId: achieve-p_idol-kllj-000
   threshold: 1
   assetId: img_general_achievement_char_kllj-011
@@ -6857,6 +7283,54 @@
     resourceId: ""
     quantity: 30
   index: 0
+- achievementId: achieve-p_idol-kllj-015
+  threshold: 5
+  assetId: img_general_achievement_kllj-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 0
+- achievementId: achieve-p_idol-kllj-015
+  threshold: 10
+  assetId: img_general_achievement_kllj-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 1
+- achievementId: achieve-p_idol-kllj-015
+  threshold: 20
+  assetId: img_general_achievement_kllj-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 2
+- achievementId: achieve-p_idol-kllj-015
+  threshold: 30
+  assetId: img_general_achievement_kllj-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 3
+- achievementId: achieve-p_idol-kllj-015
+  threshold: 45
+  assetId: img_general_achievement_kllj-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 4
+- achievementId: achieve-p_idol-kllj-015
+  threshold: 60
+  assetId: img_general_achievement_kllj-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 5
 - achievementId: achieve-p_idol-shro-000
   threshold: 1
   assetId: img_general_achievement_char_shro-011
@@ -7445,6 +7919,54 @@
     resourceId: ""
     quantity: 30
   index: 0
+- achievementId: achieve-p_idol-shro-015
+  threshold: 5
+  assetId: img_general_achievement_shro-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 0
+- achievementId: achieve-p_idol-shro-015
+  threshold: 10
+  assetId: img_general_achievement_shro-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 1
+- achievementId: achieve-p_idol-shro-015
+  threshold: 20
+  assetId: img_general_achievement_shro-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 2
+- achievementId: achieve-p_idol-shro-015
+  threshold: 30
+  assetId: img_general_achievement_shro-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 3
+- achievementId: achieve-p_idol-shro-015
+  threshold: 45
+  assetId: img_general_achievement_shro-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 4
+- achievementId: achieve-p_idol-shro-015
+  threshold: 60
+  assetId: img_general_achievement_shro-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 5
 - achievementId: achieve-p_idol-ssmk-000
   threshold: 1
   assetId: img_general_achievement_char_ssmk-011
@@ -8033,6 +8555,54 @@
     resourceId: ""
     quantity: 30
   index: 0
+- achievementId: achieve-p_idol-ssmk-015
+  threshold: 5
+  assetId: img_general_achievement_ssmk-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 0
+- achievementId: achieve-p_idol-ssmk-015
+  threshold: 10
+  assetId: img_general_achievement_ssmk-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 1
+- achievementId: achieve-p_idol-ssmk-015
+  threshold: 20
+  assetId: img_general_achievement_ssmk-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 2
+- achievementId: achieve-p_idol-ssmk-015
+  threshold: 30
+  assetId: img_general_achievement_ssmk-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 3
+- achievementId: achieve-p_idol-ssmk-015
+  threshold: 45
+  assetId: img_general_achievement_ssmk-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 4
+- achievementId: achieve-p_idol-ssmk-015
+  threshold: 60
+  assetId: img_general_achievement_ssmk-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 5
 - achievementId: achieve-p_idol-ttmr-000
   threshold: 1
   assetId: img_general_achievement_char_ttmr-011
@@ -8621,3 +9191,51 @@
     resourceId: ""
     quantity: 30
   index: 0
+- achievementId: achieve-p_idol-ttmr-015
+  threshold: 5
+  assetId: img_general_achievement_ttmr-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 0
+- achievementId: achieve-p_idol-ttmr-015
+  threshold: 10
+  assetId: img_general_achievement_ttmr-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 1
+- achievementId: achieve-p_idol-ttmr-015
+  threshold: 20
+  assetId: img_general_achievement_ttmr-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 2
+- achievementId: achieve-p_idol-ttmr-015
+  threshold: 30
+  assetId: img_general_achievement_ttmr-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 3
+- achievementId: achieve-p_idol-ttmr-015
+  threshold: 45
+  assetId: img_general_achievement_ttmr-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 4
+- achievementId: achieve-p_idol-ttmr-015
+  threshold: 60
+  assetId: img_general_achievement_ttmr-tower_001
+  rewards:
+  - resourceType: ResourceType_JewelTotal
+    resourceId: ""
+    quantity: 50
+  index: 5

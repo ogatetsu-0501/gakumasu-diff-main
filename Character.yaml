@@ -23,11 +23,13 @@
   - achieve-p_idol-amao-012
   - achieve-p_idol-amao-013
   - achieve-p_idol-amao-014
+  - achieve-p_idol-amao-015
   masterAchievementId: achieve-m_amao-001
   idolCardIds:
   - i_card-amao-1-000
   - i_card-amao-2-000
   - i_card-amao-3-000
+  - i_card-amao-3-001
   supportCardIds:
   - s_card-1-0003
   - s_card-2-0002
@@ -148,6 +150,7 @@
   - achieve-p_idol-fktn-012
   - achieve-p_idol-fktn-013
   - achieve-p_idol-fktn-014
+  - achieve-p_idol-fktn-015
   masterAchievementId: achieve-m_fktn-001
   idolCardIds:
   - i_card-fktn-1-000
@@ -328,6 +331,7 @@
   - achieve-p_idol-hrnm-012
   - achieve-p_idol-hrnm-013
   - achieve-p_idol-hrnm-014
+  - achieve-p_idol-hrnm-015
   masterAchievementId: achieve-m_hrnm-001
   idolCardIds:
   - i_card-hrnm-1-000
@@ -455,6 +459,7 @@
   - achieve-p_idol-hski-012
   - achieve-p_idol-hski-013
   - achieve-p_idol-hski-014
+  - achieve-p_idol-hski-015
   masterAchievementId: achieve-m_hski-001
   idolCardIds:
   - i_card-hski-1-000
@@ -589,6 +594,7 @@
   - achieve-p_idol-hume-012
   - achieve-p_idol-hume-013
   - achieve-p_idol-hume-014
+  - achieve-p_idol-hume-015
   masterAchievementId: achieve-m_hume-001
   idolCardIds:
   - i_card-hume-1-000
@@ -806,6 +812,7 @@
   - achieve-p_idol-kcna-012
   - achieve-p_idol-kcna-013
   - achieve-p_idol-kcna-014
+  - achieve-p_idol-kcna-015
   masterAchievementId: achieve-m_kcna-001
   idolCardIds:
   - i_card-kcna-1-000
@@ -939,6 +946,7 @@
   - achieve-p_idol-kllj-012
   - achieve-p_idol-kllj-013
   - achieve-p_idol-kllj-014
+  - achieve-p_idol-kllj-015
   masterAchievementId: achieve-m_kllj-001
   idolCardIds:
   - i_card-kllj-1-000
@@ -952,6 +960,7 @@
   - s_card-3-0008
   - s_card-3-0017
   - s_card-3-0018
+  - s_card-3-0026
   viewConditionSetId: ""
   normalCostumeHeadId: costume_head_kllj-schl-0000
   trainingCostumeHeadId: costume_head_kllj-schl-0000
@@ -1102,6 +1111,7 @@
   - achieve-p_idol-shro-012
   - achieve-p_idol-shro-013
   - achieve-p_idol-shro-014
+  - achieve-p_idol-shro-015
   masterAchievementId: achieve-m_shro-001
   idolCardIds:
   - i_card-shro-1-000
@@ -1230,11 +1240,13 @@
   - achieve-p_idol-ssmk-012
   - achieve-p_idol-ssmk-013
   - achieve-p_idol-ssmk-014
+  - achieve-p_idol-ssmk-015
   masterAchievementId: achieve-m_ssmk-001
   idolCardIds:
   - i_card-ssmk-1-000
   - i_card-ssmk-2-000
   - i_card-ssmk-3-000
+  - i_card-ssmk-3-001
   supportCardIds:
   - s_card-1-0006
   - s_card-1-0007
@@ -1244,6 +1256,7 @@
   - s_card-3-0008
   - s_card-3-0017
   - s_card-3-0018
+  - s_card-3-0026
   viewConditionSetId: ""
   normalCostumeHeadId: costume_head_ssmk-schl-0000
   trainingCostumeHeadId: costume_head_ssmk-schl-0000
@@ -1356,6 +1369,7 @@
   - achieve-p_idol-ttmr-012
   - achieve-p_idol-ttmr-013
   - achieve-p_idol-ttmr-014
+  - achieve-p_idol-ttmr-015
   masterAchievementId: achieve-m_ttmr-001
   idolCardIds:
   - i_card-ttmr-1-000
